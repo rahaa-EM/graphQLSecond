@@ -33,12 +33,11 @@ const PersonCard = props => {
 
             ]}
              >
-                <Link to={`/detail/${id}`}>
              <Card.Meta
                         title={<h3>{firstName} {lastName}</h3>}
                     />
              <Cars cars={cars} firstName={firstName} lastName={lastName}/>
-             </Link>
+             <Link to={`/detail/${id}`} className="details-link">Details</Link>
             </Card>
         )}
         
